@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <EditText
+        android:layout_marginTop="100dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/storeNameText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Store Name" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/expirationDateText"
+        android:layout_below="@+id/storeNameText"
+        android:layout_centerHorizontal="true"
+        android:hint="Expiration Date"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/couponNumberText"
+        android:layout_below="@+id/expirationDateText"
+        android:layout_centerHorizontal="true"
+        android:hint="CouponNumber"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/addButton"
+        android:layout_alignBaseline="@+id/viewButton"
+        android:layout_alignBottom="@+id/viewButton"
+        android:layout_alignStart="@+id/couponNumberText" />
+
+    <Button
+        android:layout_marginTop="26dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View"
+        android:id="@+id/viewButton"
+        android:layout_below="@+id/couponNumberText"
+        android:layout_alignEnd="@+id/couponNumberText" />
+
+</RelativeLayout>
